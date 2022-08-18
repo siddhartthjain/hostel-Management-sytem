@@ -15,9 +15,9 @@ app.use(cors());
 // app.get('/',(req,res)=>{
 //     res.send("Hey")
 // })
-//mongodb+srv://siddharth_admin:qwerty0987@cluster0.lqczb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
 app.use("/students",studentRoutes);
-const CONNECTION_URL='mongodb+srv://siddharth_admin:qwerty0987@cluster0.lqczb.mongodb.net/?retryWrites=true&w=majority'; 
+const CONNECTION_URL='your connnection id from mongoDb atlas" 
 const port=5000;
 mongoose.connect(CONNECTION_URL,{
     useNewUrlParser:true,
